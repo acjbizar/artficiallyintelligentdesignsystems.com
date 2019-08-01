@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html dir="ltr" itemscope itemtype="http://schema.org/CreativeWork" lang="en">
+<head>
+<meta charset="utf-8">
+<meta property="fb:admins" content="509248955">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="application-name" content="AIDS">
+<meta name="description" property="og:description" content="The Internet artwork with the unfortunate abbreviation. By Alexander Christiaan Jacob. Based on his final project at the Royal Academy of Art, The Hague, for the study Graphic &amp; Typographic Design (2006). Net version 2012.">
+<meta property="og:image" content="http://artficiallyintelligentdesignsystems.com/apple-touch-icon-precomposed.png">
+<meta property="og:title" content="Artificially Intelligent Design Systems">
+<meta property="og:url" content="http://artficiallyintelligentdesignsystems.com/">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width">
+<title itemprop="name">Artificially Intelligent Design Systems</title>
+<link rel="apple-touch-icon-precomposed" href="http://artficiallyintelligentdesignsystems.com/apple-touch-icon-precomposed.png">
+<link rel="author" href="http://alexanderchristiaanjacob.com/" title="Alexander Christiaan Jacob">
+<link rel="canonical" href="http://artficiallyintelligentdesignsystems.com/">
+<link rel="shortlink" href="http://aids.acjs.net/">
+<style>
+*{border:0;margin:0;outline:0;padding:0;text-decoration:none}
+body,canvas,html{display:block;height:100%;overflow:hidden;user-select:none;width:100%}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6227584-50', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<canvas id="content" role="main">Requires <code>html:canvas</code> support.</canvas>
+<script>
+
+function b(){
+  return Math.round(Math.random());
+}
+
+var x0020 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // space
+var x0023 = [0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0]; // #
+var x002C = [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0]; // -
+var x002E = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]; // .
+var x002F = [0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0]; // /
+var x0030 = [0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0]; // 0
+var x0031 = [0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0]; // 1
+var x0032 = [0,1,1,1,0,1,0,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,1,1,1]; // 2
+var x0033 = [1,1,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,1,1,0]; // 3
+var x0034 = [0,0,1,1,0,0,1,0,1,0,1,1,1,1,1,0,0,0,1,0,0,0,0,1,0]; // 4
+var x0035 = [1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0]; // 5
+var x0036 = [0,1,1,1,1,1,0,0,0,0,1,1,1,1,0,1,0,0,0,1,0,1,1,1,0]; // 6
+var x0037 = [1,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0]; // 7
+var x0038 = [0,1,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0]; // 8
+var x0039 = [0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,0,0,0,0,1,1,1,1,1,0]; // 9
+var x003A = [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]; // :
+var x0040 = [1,1,1,1,0,0,0,0,0,1,0,1,1,0,1,1,0,1,0,1,1,1,1,1,1]; // @
+var x0041 = [0,1,1,1,0,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1]; // A
+var x0042 = [1,1,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,0,0,1,1,1,1,1,0]; // B
+var x0043 = [0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1,1]; // C
+var x0044 = [1,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,1,1,0]; // D
+var x0045 = [1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,1,0,0,0,0,1,1,1,1,1]; // E
+var x0046 = [1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,1,0,0,0,0,1,0,0,0,0]; // F
+var x0047 = [0,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,0,0,0,1,0,1,1,1,1]; // G
+var x0048 = [1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1]; // H
+var x0049 = [0,1,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0]; // I
+var x004A = [0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0]; // J
+var x004B = [1,0,0,1,0,1,0,1,0,0,1,1,0,0,0,1,0,1,0,0,1,0,0,1,0]; // K
+var x004C = [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,1,1,1]; // L
+var x004D = [1,0,0,0,1,1,1,0,1,1,1,0,1,0,1,1,0,0,0,1,1,0,0,0,1]; // M
+var x004E = [1,0,0,0,1,1,1,0,0,1,1,0,1,0,1,1,0,0,1,1,1,0,0,0,1]; // N
+var x004F = [0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0]; // O
+var x0050 = [1,1,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,0,0,0,1,0,0,0,0]; // P
+var x0051 = [0,1,1,1,0,1,0,0,0,1,1,0,1,0,1,1,0,0,1,0,0,1,1,0,1]; // Q
+var x0052 = [1,1,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,0,0,1,1,0,0,0,1]; // R
+var x0053 = [0,1,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,0]; // S
+var x0054 = [1,1,1,1,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0]; // T
+var x0055 = [1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0]; // U
+var x0056 = [1,0,0,0,1,1,0,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0]; // V
+var x0057 = [1,0,0,0,1,1,0,0,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0]; // W
+var x0058 = [1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1]; // X
+var x0059 = [1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0]; // Y
+var x005A = [1,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1]; // Z
+var x007C = [0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0]; // Vertical align
+var x2014 = [0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0]; // Em dash
+var x2026 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1]; // ...
+var x203C = [0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0]; // !! 
+var x221E = [0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0]; // Infinity
+var x2302 = [0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1]; // House
+var x2661 = [0,1,0,1,0,1,0,1,0,1,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0]; // White heart
+var x2662 = [0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0]; // White diamond
+var x2665 = [0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,1,0,0]; // Black heart
+var x2666 = [0,0,1,0,0,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,1,0,0]; // Black diamond
+var xAF = [1,1,1,1,1,1,0,1,0,0,1,1,1,1,0,1,0,1,0,0,1,0,1,0,0]; // AF
+var xHB = [1,0,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,0,1,1,0]; // HB
+var xLE = [1,0,1,1,1,1,0,0,0,0,1,0,1,1,1,1,0,0,0,0,1,1,1,1,1]; // LE
+var xPi = [1,1,1,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0]; // Pi
+var xem = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]; // em
+var xrand = [b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b(),b()];
+
+d = 2;
+x = 0;
+y = 0;
+w = d;
+h = d;
+r = 0;
+g = 0;
+b = 0;
+o = 0;
+counter = 0;
+frame = 0;
+letter = [];
+margin = 1;
+
+/*
+window.requestAnimFrame = (function(callback){
+    return window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    function(callback){
+        window.setTimeout(callback, 1000 / 2);
+    };
+})();
+*/
+
+window.requestAnimFrame = (function(callback){
+    return function(callback){
+        window.setTimeout(callback, 1000 / 24);
+    };
+})();
+
+window.onload = function(){
+    var canvas = document.getElementById('content');
+    c = canvas.getContext('2d');
+    var body = document.body;
+    var html = document.documentElement;
+    height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+    width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+    canvas.width = width;
+    canvas.height = height;
+    c.fillStyle = '#000000';
+    c.fillRect(0,0,width,height);
+    var date = new Date();
+    var time = date.getTime();
+    animate(canvas, time);
+};
+
+function animate(canvas, lastTime){
+    var date = new Date();
+    var time = date.getTime();
+    var timeDiff = time - lastTime;
+    lastTime = time;
+    selectChar();
+    selectprimitive();
+    selectColor();
+    selectRotation();
+    charChar(letter, Math.round(1 + Math.random() * 3));
+    selectText();
+    selectMargin();
+    selectDiameter();
+    resetPositions();
+    selectprimitive();
+    writeRandomWord();
+    blackBoxes();
+    drawGekkigheid(10);
+    c.translate(1,1);
+
+    requestAnimFrame(function(){
+        animate(canvas, timeDiff);
+    });
+}
+
+    var makeCurveArgs = function(points) {
+      var copy = points.slice();
+      var result = [];
+      copy.shift(); //drop the first point, it will be handled elsewhere
+      var tangent;
+      if(copy.length >= 3) {
+        var cp1 = copy.shift();
+        var cp2 = copy.shift();
+        var p2 = copy.shift();
+        
+        result.push([cp1[0], cp1[1], cp2[0], cp2[1], p2[0], p2[1]]);            
+      }
+      while(copy.length >= 2) {
+        var cp1 = [2 * p2[0] - cp2[0], 2 * p2[1] - cp2[1]];
+        var cp2 = copy.shift();
+        var p2 = copy.shift();
+        result.push([cp1[0], cp1[1], cp2[0], cp2[1], p2[0], p2[1]]);            
+      }
+      return result;
+    }
+
+
+/* http://stackoverflow.com/questions/7584917/javascript-curve-generation */
+    var notThatHard = function(points) {
+      var origin = points[0].slice();
+      var curves = makeCurveArgs(points);
+      var drawCurves = function(context) {
+        context.beginPath();
+        context.moveTo(origin[0], origin[1]);
+          for(var i = 0; i < curves.length; i++) {
+          var c = curves[i];
+          context.bezierCurveTo(c[0], c[1], c[2], c[3], c[4], c[5]);
+      }
+      };
+      return drawCurves;
+    };
+
+function drawGekkigheid(probability) {
+    if (Math.round(Math.random() * 100) < probability) {
+      if (Math.random() > .1) {
+        c.fillStyle = '#ffffff';
+      } 
+      else {
+        selectColor();
+      }
+      x = Math.round(Math.random() * width);
+      y = Math.round(Math.random() * width);
+      var coords = [];
+      coords.push([x, y]);
+      for (var i = 0; i < Math.round(3 + Math.random() * 9); i++) {
+        coords.push([Math.round(Math.random() * width), Math.round(Math.random() * width)]);
+      }
+      var curveDraw = notThatHard(coords);
+      curveDraw(c);
+      c.fill();
+    }
+}
+
+function resetPositions() {
+    if (x >= width) {
+      x = 0;
+    }
+    if (y >= height) {
+      y = 0;
+    }
+}
+
+function selectMargin() {
+    switch(Math.round(Math.random() * 12)) {
+    case 0:
+      margin = 0;
+      break;
+    case 2:
+      margin = 2;
+      break;
+    case 3:
+      margin = 3;
+      break;
+    default:
+      margin = 1;
+      break;
+    }
+}
+
+function selectDiameter() {
+    switch(Math.round(Math.random() * 12)) {
+    case 0:
+      d = 0;
+      break;
+    case 2:
+      d = 2;
+      break;
+    case 3:
+      d = 3;
+      break;
+    default:
+      d = 1;
+      break;
+    }
+}
+
+function selectChar() {
+    switch (Math.round(Math.random() * 55)) {
+    case 0:
+      letter = x0030;
+      break;
+    case 1:
+      letter = x0031;
+      break;
+    case 2:
+      letter = x0032;
+      break;
+    case 3:
+      letter = x0033;
+      break;
+    case 4:
+      letter = x0034;
+      break;
+    case 5:
+      letter = x0035;
+      break;
+    case 6:
+      letter = x0036;
+      break;
+    case 7:
+      letter = x0037;
+      break;
+    case 8:
+      letter = x0038;
+      break;
+    case 9:
+      letter = x0039;
+      break;
+    case 10:
+      letter = xAF;
+      break;
+    case 11:
+      letter = x0041;
+      break;
+    case 12:
+      letter = x0042;
+      break;
+    case 13:
+      letter = x0043;
+      break;
+    case 14:
+      letter = x0044;
+      break;
+    case 15:
+      letter = x0045;
+      break;
+    case 16:
+      letter = x0046;
+      break;
+    case 17:
+      letter = x0047;
+      break;
+    case 18:
+      letter = x0048;
+      break;
+    case 19:
+      letter = x0049;
+      break;
+    case 20:
+      letter = x004A;
+      break;
+    case 21:
+      letter = x004B;
+      break;
+    case 22:
+      letter = x004C;
+      break;
+    case 23:
+      letter = x004D;
+      break;
+    case 24:
+      letter = x004F;
+      break;
+    case 25:
+      letter = x0050;
+      break;
+    case 26:
+      letter = x0051;
+      break;
+    case 27:
+      letter = x0052;
+      break;
+    case 28:
+      letter = x0053;
+      break;
+    case 29:
+      letter = x0054;
+      break;
+    case 30:
+      letter = x0055;
+      break;
+    case 31:
+      letter = x0056;
+      break;
+    case 32:
+      letter = x0057;
+      break;
+    case 33:
+      letter = x0058;
+      break;
+    case 34:
+      letter = x0059;
+      break;
+    case 35:
+      letter = x005A;
+      break;
+    case 36:
+      letter = xHB;
+      break;
+    case 37:
+      letter = x0020;
+      break;
+    case 38:
+      letter = x0023;
+      break;
+    case 39:
+      letter = xLE;
+      break;
+    case 40:
+      letter = xPi;
+      break;
+    case 41:
+      letter = x2014;
+      break;
+    case 42:
+      letter = x2026;
+      break;
+    case 43:
+      letter = x203C;
+      break;
+    case 44:
+      letter = x2302;
+      break;
+    case 45:
+      letter = x221E;
+      break;
+    case 46:
+      letter = x2661;
+      break;
+    case 47:
+      letter = x2665;
+      break;
+    case 48:
+      letter = x2662;
+      break;
+    case 49:
+      letter = x2666;
+      break;
+    case 50:
+      letter = x007C;
+      break;
+    default:
+      /*xrand = [
+        b(),b(),b(),
+        b(),b(),b(),
+        b(),b(),b(),
+        b(),b(),b(),
+        b(),b(),b(),
+        b(),b(),b(),
+        b(),b(),b(),
+        b(),b(),b(),
+        b()];*/
+      letter = xrand;
+      break;
+    }
+}
+
+function selectprimitive() {
+    w = Math.round(1 + Math.random() * (width - 1));
+    h = Math.round(1 + Math.random() * (height - 1));
+    x = 1 - w + Math.round(Math.random() * width * 2);//int(round(random(1 - w, width - 1)));
+    y = 1 - h + Math.round(Math.random() * height * 2);
+}
+
+colors = 0;
+reds = 0;
+greens = 0;
+blues = 0;
+yellows = 0;
+cyans = 0;
+magentas = 0;
+grays = 0;
+
+function selectColor() {
+    if (colors < 100000) {
+      colorAquatic();
+    } 
+    else if (colors < 150000) {
+      colorGrays();
+    } 
+    else if (colors < 150100) {
+      colorBlacknwhite();
+    } 
+    else if (colors < 200000) {
+      colorHellish();
+    } 
+    else {
+      colors = 0;
+    }
+    colors++;
+}
+
+function colorAquatic() {
+    switch (Math.round(Math.random() * 5)) {
+    case 0:
+      if (reds < 1000000) {
+        r = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(' + r + ', 0, 0, ' + (Math.random() * 0.5) + ')';
+        reds += r;
+      } 
+      else if (greens < 1000000) {
+        g = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(0, ' + g + ', 0, ' + (Math.random() * 0.5) + ')';
+        greens += g;
+      } 
+      else if (blues < 1000000) {
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(0, 0, ' + b + ', ' + (Math.random() * 0.5) + ')';
+        blues += b;
+      } 
+      else if (yellows < 1000000) {
+        r = Math.round(Math.random() * 255);
+        g = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(' + r + ', ' + g + ', 0, ' + (Math.random()*0.5) + ')';
+        yellows += Math.round(Math.random() * 255);
+      } 
+      else if (cyans < 1000000) {
+        g = Math.round(Math.random() * 255);
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgb(0, ' + g + ', ' + b + ')';
+        cyans += Math.round(Math.random() * 255);
+      } 
+      else if (magentas < 1000000) {
+        r = Math.round(Math.random() * 255);
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgb(' + r + ', 0, ' + b + ')';
+        magentas += Math.round(Math.random() * 255);
+      } 
+      else {
+        r = Math.round(Math.random() * 255);
+        g = Math.round(Math.random() * 255);
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+        reds = 0;
+        greens = 0;
+        blues = 0;
+        yellows = 0;
+        cyans = 0;
+        magentas = 0;
+      }
+      break;
+    default:
+      c.fillStyle =  'rgba(0, ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + (Math.random() * 0.5) + ')';
+      break;
+    }
+}
+
+function colorGrays() {
+    grays = Math.round(Math.random() * 255);
+    c.fillStyle = 'rgba(' + grays + ',' + grays + ',' + grays + ',' + (0.00390625 + Math.random() * 0.77734375) + ')';
+}
+
+function colorBlacknwhite() {
+    c.fillStyle = 'rgba(255, 255, 255, ' + (0.046875 + Math.random() * 0.890625) + ')';
+}
+
+function colorHellish() {
+    switch (Math.round(Math.random() * 5)) {
+    case 0:
+      if (reds < 1000000) {
+        r = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(' + r + ', 0, 0,' + (Math.random() * 0.5) + ')';
+        reds += r;
+      } 
+      else if (greens < 1000000) {
+        g = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(0,' + g + ', 0,' + (Math.random() * 0.5) + ')';
+        greens += g;
+      } 
+      else if (blues < 1000000) {
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(0,0,' + b + ',' + (Math.random() * 0.5) + ')';
+        blues += b;
+      } 
+      else if (yellows < 1000000) {
+        r = Math.round(Math.random() * 255);
+        g = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgba(' + r + ',' + g + ',0,' + (Math.random() * 0.5) + ')';
+        yellows += Math.round(Math.random() * 255);;
+      } 
+      else if (cyans < 1000000) {
+        g = Math.round(Math.random() * 255);
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgb(0,' + g + ',' + b + ')';
+        cyans += Math.round(Math.random() * 255);;
+      } 
+      else if (magentas < 1000000) {
+        r = Math.round(Math.random() * 255);
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgb(' + r + ',0,' + b + ')';
+        magentas += Math.round(Math.random() * 255);
+      } 
+      else {
+        r = Math.round(Math.random() * 255);
+        g = Math.round(Math.random() * 255);
+        b = Math.round(Math.random() * 255);
+        c.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
+        reds = 0;
+        greens = 0;
+        blues = 0;
+        yellows = 0;
+        cyans = 0;
+        magentas = 0;
+      }
+      break;
+    default:
+      c.fillStyle = 'rgba(' + Math.round(128 + Math.random() * 127) + ', ' + Math.round(Math.random() * 255) + ', 0, ' + (Math.random() * 0.5) + ')';
+      break;
+    }
+}
+
+function selectRotation() {
+    switch(Math.round(Math.random() * 3)) {
+    case 1:
+      c.rotate(Math.PI/2);
+      break;
+    case 2:
+      c.rotate(Math.PI);
+      break;
+    case 3:
+      c.rotate(Math.PI*1.5);
+    default:
+      break;
+    }
+  }
+
+function charChar(xchar, power) {
+    // Ik maak letters van letters.
+    if (power < 2) {
+      drawchar(xchar);
+    } 
+    else if (power > 5) {
+      charChar(xchar, 5);
+    } 
+    else {
+      power--;
+      for (var i = 0; i < 25; i++) {
+        //counter++;
+        if (i == 5 || i == 10 || i == 15 || i == 20 || i == 25) {
+          //counter = 0;
+          x -= w*Math.pow(5, power + 1) + margin*Math.pow(5, power);
+          y += h*Math.pow(5, power) + margin*Math.pow(5, power-1);
+        }
+        if (xchar[i] > .5) {
+          charChar(xchar, power);
+        } 
+        else {
+          if (Math.random() > .01) {
+            if (colors > 150000 && colors < 150100 || Math.random() > .99) {
+              c.fillStyle = '#000000';
+            } 
+            else {
+              selectColor();
+            }
+          } 
+          else {
+            c.fillStyle = '#ffffff';
+          }
+          c.beginPath();
+          c.arc(x+w*Math.pow(5, power)/2, y+w*Math.pow(5, power)/2, w*Math.pow(5, power)/2, 0, Math.PI*2, false); 
+          c.closePath();
+          c.fill();
+          x += w*Math.pow(5, power) + margin * Math.pow(5, power - 1);
+        }
+      }
+      y -= h*4*Math.pow(5, power);
+      y -= margin*4*Math.pow(5, power - 1);
+    }
+  }
+
+function drawchar(xchar) {
+    // Ik maak letters van deeltjes.
+    h = d;
+    w = d;
+    for (var i = 0; i < 25; i++) {
+      if (i == 5 || i == 10 || i == 15 || i == 20 || i == 25) {
+        x -= w*5;
+        y += h;
+      }
+      if (xchar[i] > .5) {
+        drawprimitive();
+      }
+      x += w;
+    }
+    y -= h*4;
+    x += margin;
+}
+
+function drawprimitive() {
+    if (h < 3 || w < 3) {
+      c.fillRect(x, y, w, h);
+    } 
+    else {
+      c.beginPath();
+      c.arc(x+w/2, y+w/2, w/2, 0, Math.PI*2, false); 
+      c.closePath();
+      c.fill();
+    }
+}
+
+function selectText() {
+    switch(Math.round(Math.random() * 8)) {
+    case 0:
+      writeHomepage();
+      break;
+    case 1:
+      writeEmail();
+      break;
+    case 2:
+      writeLetteretter3();
+      break;
+    case 3:
+      writeNeoestheticisme();
+      break;
+    case 4:
+      writeKabk();
+      break;
+    case 5:
+      writeTime();
+      break;
+    default:
+      writeName();
+      break;
+    }
+}
+
+function writeName() {
+    drawchar(x0041);
+    drawchar(x004C);
+    drawchar(x0045);
+    drawchar(x0058);
+    drawchar(x0041);
+    drawchar(x004E);
+    drawchar(x0044);
+    drawchar(x0045);
+    drawchar(x0052);
+    drawchar(x0020);
+    drawchar(x0043);
+    drawchar(x0048);
+    drawchar(x0052);
+    drawchar(x0049);
+    drawchar(x0053);
+    drawchar(x0054);
+    drawchar(x0049);
+    drawchar(x0041);
+    drawchar(x0041);
+    drawchar(x004E);
+    drawchar(x0020);
+    drawchar(x004A);
+    drawchar(x0041);
+    drawchar(x0043);
+    drawchar(x004F);
+    drawchar(x0042);
+}
+
+function writeHomepage() {
+    drawchar(x0048);
+    drawchar(x0054);
+    drawchar(x0054);
+    drawchar(x0050);
+    drawchar(x003A);
+    drawchar(x002F);
+    drawchar(x002F);
+    drawchar(x0041);
+    drawchar(x0043);
+    drawchar(x004A);
+    drawchar(x0053);
+    drawchar(x002E);
+    drawchar(x004E);
+    drawchar(x0045);
+    drawchar(x0054);
+    drawchar(x002F);
+}
+
+function writeEmail() {
+    drawchar(x0045);
+    drawchar(x0047);
+    drawchar(x004F);
+    drawchar(x0040);
+    drawchar(x0041);
+    drawchar(x0043);
+    drawchar(x004A);
+    drawchar(x0053);
+    drawchar(x002E);
+    drawchar(x004E);
+    drawchar(x0045);
+    drawchar(x0054);
+}
+
+function writeLetteretter3() {
+    drawchar(x004C);
+    drawchar(x0045);
+    drawchar(x0054);
+    drawchar(x0054);
+    drawchar(x0045);
+    drawchar(x0052);
+    drawchar(x0045);
+    drawchar(x0054);
+    drawchar(x0054);
+    drawchar(x0045);
+    drawchar(x0052);
+    drawchar(x0033);
+}
+
+function writeNeoestheticisme() {
+    drawchar(x004E);
+    drawchar(x0045);
+    drawchar(x004F);
+    drawchar(x002C);
+    drawchar(x0045);
+    drawchar(x0053);
+    drawchar(x0054);
+    drawchar(x0048);
+    drawchar(x0045);
+    drawchar(x0054);
+    drawchar(x0049);
+    drawchar(x0043);
+    drawchar(x0049);
+    drawchar(x0053);
+    drawchar(x004D);
+    drawchar(x0045);
+}
+
+function writeKabk() {
+    drawchar(x004B);
+    drawchar(x0041);
+    drawchar(x0042);
+    drawchar(x004B);
+}
+
+function writeHour() {
+  var d = new Date();
+    switch (d.getHours()) {
+    case 1:
+    drawchar(x0030);
+    drawchar(x0031);
+    break;
+    case 2:
+    drawchar(x0030);
+    drawchar(x0032);
+    break;
+    case 3:
+    drawchar(x0030);
+    drawchar(x0033);
+    break;
+    case 4:
+    drawchar(x0030);
+    drawchar(x0034);
+    break;
+    case 5:
+    drawchar(x0030);
+    drawchar(x0035);
+    break;
+    case 6:
+    drawchar(x0030);
+    drawchar(x0036);
+    break;
+    case 7:
+    drawchar(x0030);
+    drawchar(x0037);
+    break;
+    case 8:
+    drawchar(x0030);
+    drawchar(x0038);
+    break;
+    case 9:
+    drawchar(x0030);
+    drawchar(x0039);
+    break;
+    case 10:
+    drawchar(x0031);
+    drawchar(x0030);
+    break;
+    case 11:
+    drawchar(x0031);
+    drawchar(x0031);
+    break;
+    case 12:
+    drawchar(x0031);
+    drawchar(x0032);
+    break;
+    case 13:
+    drawchar(x0031);
+    drawchar(x0033);
+    break;
+    case 14:
+    drawchar(x0031);
+    drawchar(x0034);
+    break;
+    case 15:
+    drawchar(x0031);
+    drawchar(x0035);
+    break;
+    case 16:
+    drawchar(x0031);
+    drawchar(x0036);
+    break;
+    case 17:
+    drawchar(x0031);
+    drawchar(x0037);
+    break;
+    case 18:
+    drawchar(x0031);
+    drawchar(x0038);
+    break;
+    case 19:
+    drawchar(x0031);
+    drawchar(x0039);
+    break;
+    case 20:
+    drawchar(x0032);
+    drawchar(x0030);
+    break;
+    case 21:
+    drawchar(x0032);
+    drawchar(x0031);
+    break;
+    case 22:
+    drawchar(x0032);
+    drawchar(x0032);
+    break;
+    case 23:
+    drawchar(x0032);
+    drawchar(x0033);
+    break;
+    default:
+    drawchar(x0030);
+    drawchar(x0030);
+    break;
+    }
+}
+
+function writeMinute() {
+  var d = new Date();
+    switch (d.getMinutes()) {
+    case 1:
+    drawchar(x0030);
+    drawchar(x0031);
+    break;
+    case 2:
+    drawchar(x0030);
+    drawchar(x0032);
+    break;
+    case 3:
+    drawchar(x0030);
+    drawchar(x0033);
+    break;
+    case 4:
+    drawchar(x0030);
+    drawchar(x0034);
+    break;
+    case 5:
+    drawchar(x0030);
+    drawchar(x0035);
+    break;
+    case 6:
+    drawchar(x0030);
+    drawchar(x0036);
+    break;
+    case 7:
+    drawchar(x0030);
+    drawchar(x0037);
+    break;
+    case 8:
+    drawchar(x0030);
+    drawchar(x0038);
+    break;
+    case 9:
+    drawchar(x0030);
+    drawchar(x0039);
+    break;
+    case 10:
+    drawchar(x0031);
+    drawchar(x0030);
+    break;
+    case 11:
+    drawchar(x0031);
+    drawchar(x0031);
+    break;
+    case 12:
+    drawchar(x0031);
+    drawchar(x0032);
+    break;
+    case 13:
+    drawchar(x0031);
+    drawchar(x0033);
+    break;
+    case 14:
+    drawchar(x0031);
+    drawchar(x0034);
+    break;
+    case 15:
+    drawchar(x0031);
+    drawchar(x0035);
+    break;
+    case 16:
+    drawchar(x0031);
+    drawchar(x0036);
+    break;
+    case 17:
+    drawchar(x0031);
+    drawchar(x0037);
+    break;
+    case 18:
+    drawchar(x0031);
+    drawchar(x0038);
+    break;
+    case 19:
+    drawchar(x0031);
+    drawchar(x0039);
+    break;
+    case 20:
+    drawchar(x0032);
+    drawchar(x0030);
+    break;
+    case 21:
+    drawchar(x0032);
+    drawchar(x0031);
+    break;
+    case 22:
+    drawchar(x0032);
+    drawchar(x0032);
+    break;
+    case 23:
+    drawchar(x0032);
+    drawchar(x0033);
+    break;
+    case 24:
+    drawchar(x0032);
+    drawchar(x0034);
+    break;
+    case 25:
+    drawchar(x0032);
+    drawchar(x0035);
+    break;
+    case 26:
+    drawchar(x0032);
+    drawchar(x0036);
+    break;
+    case 27:
+    drawchar(x0032);
+    drawchar(x0037);
+    break;
+    case 28:
+    drawchar(x0032);
+    drawchar(x0038);
+    break;
+    case 29:
+    drawchar(x0032);
+    drawchar(x0039);
+    break;
+    case 30:
+    drawchar(x0033);
+    drawchar(x0030);
+    break;
+    case 31:
+    drawchar(x0033);
+    drawchar(x0031);
+    break;
+    case 32:
+    drawchar(x0033);
+    drawchar(x0032);
+    break;
+    case 33:
+    drawchar(x0033);
+    drawchar(x0033);
+    break;
+    case 34:
+    drawchar(x0033);
+    drawchar(x0034);
+    break;
+    case 35:
+    drawchar(x0033);
+    drawchar(x0035);
+    break;
+    case 36:
+    drawchar(x0033);
+    drawchar(x0036);
+    break;
+    case 37:
+    drawchar(x0033);
+    drawchar(x0037);
+    break;
+    case 38:
+    drawchar(x0033);
+    drawchar(x0038);
+    break;
+    case 39:
+    drawchar(x0033);
+    drawchar(x0039);
+    break;
+    case 40:
+    drawchar(x0034);
+    drawchar(x0030);
+    break;
+    case 41:
+    drawchar(x0034);
+    drawchar(x0031);
+    break;
+    case 42:
+    drawchar(x0034);
+    drawchar(x0032);
+    break;
+    case 43:
+    drawchar(x0034);
+    drawchar(x0033);
+    break;
+    case 44:
+    drawchar(x0034);
+    drawchar(x0034);
+    break;
+    case 45:
+    drawchar(x0034);
+    drawchar(x0035);
+    break;
+    case 46:
+    drawchar(x0034);
+    drawchar(x0036);
+    break;
+    case 47:
+    drawchar(x0034);
+    drawchar(x0037);
+    break;
+    case 48:
+    drawchar(x0034);
+    drawchar(x0038);
+    break;
+    case 49:
+    drawchar(x0034);
+    drawchar(x0039);
+    break;
+    case 50:
+    drawchar(x0035);
+    drawchar(x0030);
+    break;
+    case 51:
+    drawchar(x0035);
+    drawchar(x0031);
+    break;
+    case 52:
+    drawchar(x0035);
+    drawchar(x0032);
+    break;
+    case 53:
+    drawchar(x0035);
+    drawchar(x0033);
+    break;
+    case 54:
+    drawchar(x0035);
+    drawchar(x0034);
+    break;
+    case 55:
+    drawchar(x0035);
+    drawchar(x0035);
+    break;
+    case 56:
+    drawchar(x0035);
+    drawchar(x0036);
+    break;
+    case 57:
+    drawchar(x0035);
+    drawchar(x0037);
+    break;
+    case 58:
+    drawchar(x0035);
+    drawchar(x0038);
+    break;
+    case 59:
+    drawchar(x0035);
+    drawchar(x0039);
+    break;
+    default:
+    drawchar(x0030);
+    drawchar(x0030);
+    break;
+    }
+}
+
+
+function writeSecond() {
+  var d = new Date();
+    switch (d.getSeconds()) {
+    case 1:
+    drawchar(x0030);
+    drawchar(x0031);
+    break;
+    case 2:
+    drawchar(x0030);
+    drawchar(x0032);
+    break;
+    case 3:
+    drawchar(x0030);
+    drawchar(x0033);
+    break;
+    case 4:
+    drawchar(x0030);
+    drawchar(x0034);
+    break;
+    case 5:
+    drawchar(x0030);
+    drawchar(x0035);
+    break;
+    case 6:
+    drawchar(x0030);
+    drawchar(x0036);
+    break;
+    case 7:
+    drawchar(x0030);
+    drawchar(x0037);
+    break;
+    case 8:
+    drawchar(x0030);
+    drawchar(x0038);
+    break;
+    case 9:
+    drawchar(x0030);
+    drawchar(x0039);
+    break;
+    case 10:
+    drawchar(x0031);
+    drawchar(x0030);
+    break;
+    case 11:
+    drawchar(x0031);
+    drawchar(x0031);
+    break;
+    case 12:
+    drawchar(x0031);
+    drawchar(x0032);
+    break;
+    case 13:
+    drawchar(x0031);
+    drawchar(x0033);
+    break;
+    case 14:
+    drawchar(x0031);
+    drawchar(x0034);
+    break;
+    case 15:
+    drawchar(x0031);
+    drawchar(x0035);
+    break;
+    case 16:
+    drawchar(x0031);
+    drawchar(x0036);
+    break;
+    case 17:
+    drawchar(x0031);
+    drawchar(x0037);
+    break;
+    case 18:
+    drawchar(x0031);
+    drawchar(x0038);
+    break;
+    case 19:
+    drawchar(x0031);
+    drawchar(x0039);
+    break;
+    case 20:
+    drawchar(x0032);
+    drawchar(x0030);
+    break;
+    case 21:
+    drawchar(x0032);
+    drawchar(x0031);
+    break;
+    case 22:
+    drawchar(x0032);
+    drawchar(x0032);
+    break;
+    case 23:
+    drawchar(x0032);
+    drawchar(x0033);
+    break;
+    case 24:
+    drawchar(x0032);
+    drawchar(x0034);
+    break;
+    case 25:
+    drawchar(x0032);
+    drawchar(x0035);
+    break;
+    case 26:
+    drawchar(x0032);
+    drawchar(x0036);
+    break;
+    case 27:
+    drawchar(x0032);
+    drawchar(x0037);
+    break;
+    case 28:
+    drawchar(x0032);
+    drawchar(x0038);
+    break;
+    case 29:
+    drawchar(x0032);
+    drawchar(x0039);
+    break;
+    case 30:
+    drawchar(x0033);
+    drawchar(x0030);
+    break;
+    case 31:
+    drawchar(x0033);
+    drawchar(x0031);
+    break;
+    case 32:
+    drawchar(x0033);
+    drawchar(x0032);
+    break;
+    case 33:
+    drawchar(x0033);
+    drawchar(x0033);
+    break;
+    case 34:
+    drawchar(x0033);
+    drawchar(x0034);
+    break;
+    case 35:
+    drawchar(x0033);
+    drawchar(x0035);
+    break;
+    case 36:
+    drawchar(x0033);
+    drawchar(x0036);
+    break;
+    case 37:
+    drawchar(x0033);
+    drawchar(x0037);
+    break;
+    case 38:
+    drawchar(x0033);
+    drawchar(x0038);
+    break;
+    case 39:
+    drawchar(x0033);
+    drawchar(x0039);
+    break;
+    case 40:
+    drawchar(x0034);
+    drawchar(x0030);
+    break;
+    case 41:
+    drawchar(x0034);
+    drawchar(x0031);
+    break;
+    case 42:
+    drawchar(x0034);
+    drawchar(x0032);
+    break;
+    case 43:
+    drawchar(x0034);
+    drawchar(x0033);
+    break;
+    case 44:
+    drawchar(x0034);
+    drawchar(x0034);
+    break;
+    case 45:
+    drawchar(x0034);
+    drawchar(x0035);
+    break;
+    case 46:
+    drawchar(x0034);
+    drawchar(x0036);
+    break;
+    case 47:
+    drawchar(x0034);
+    drawchar(x0037);
+    break;
+    case 48:
+    drawchar(x0034);
+    drawchar(x0038);
+    break;
+    case 49:
+    drawchar(x0034);
+    drawchar(x0039);
+    break;
+    case 50:
+    drawchar(x0035);
+    drawchar(x0030);
+    break;
+    case 51:
+    drawchar(x0035);
+    drawchar(x0031);
+    break;
+    case 52:
+    drawchar(x0035);
+    drawchar(x0032);
+    break;
+    case 53:
+    drawchar(x0035);
+    drawchar(x0033);
+    break;
+    case 54:
+    drawchar(x0035);
+    drawchar(x0034);
+    break;
+    case 55:
+    drawchar(x0035);
+    drawchar(x0035);
+    break;
+    case 56:
+    drawchar(x0035);
+    drawchar(x0036);
+    break;
+    case 57:
+    drawchar(x0035);
+    drawchar(x0037);
+    break;
+    case 58:
+    drawchar(x0035);
+    drawchar(x0038);
+    break;
+    case 59:
+    drawchar(x0035);
+    drawchar(x0039);
+    break;
+    default:
+    drawchar(x0030);
+    drawchar(x0030);
+    break;
+    }
+}
+
+function writeTime() {
+    writeHour();
+    drawchar(x003A);
+    writeMinute();
+    drawchar(x003A);
+    writeSecond();
+}
+
+function writeRandomWord() {
+    for (var i = 0; i < Math.round(3+Math.random() * 9); i++) {
+      selectChar();
+      charChar(letter, Math.round(1 + Math.random()));
+    }
+}
+
+function blackBoxes() {
+    if (Math.random() > .8) {
+      w = Math.round(1 + Math.random() * (width - 1));
+      h = Math.round(1 + Math.random() * (height - 1));
+      x = Math.round(1 - w + Math.random() * (width + w));
+      y = Math.round(1 - h + Math.random() * (height + h));
+      if (Math.random() > .01) {
+        c.fillStyle = '#000000';
+      } else {
+        c.fillStyle = '#ffffff'; // Black is relative
+      }
+      c.fillRect(x, y, w, h);
+    } 
+    else {
+    }
+}
+
+</script>
+</body>
+</html>
