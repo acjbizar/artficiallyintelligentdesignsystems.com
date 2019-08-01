@@ -1,1 +1,1 @@
-sitemap: http://artficiallyintelligentdesignsystems.com/sitemap.xml
+Sitemap: https://artficiallyintelligentdesignsystems.com/sitemap.xml

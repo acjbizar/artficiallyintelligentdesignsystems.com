@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "version": "20190801",
+    "name": "Artificially Intelligent Design Systems",
+    "default_locale": "en",
+    "description": "The Internet artwork with the unfortunate abbreviation. By Alexander Christiaan Jacob. Based on his final project at the Royal Academy of Art, The Hague, for the study Graphic & Typographic Design (2006). Net version 2012.",
+    "author": "Alexander Christiaan Jacob",
+    "theme_color": "#000000",
+    "homepage_url": "https://artficiallyintelligentdesignsystems.com/",
+    "start_url": "https://artficiallyintelligentdesignsystems.com/",
+    "icons": [
+        {
+            "src": "https://artficiallyintelligentdesignsystems.com/apple-touch-icon-precomposed.png"
+        }
+    ],
+    "display": "fullscreen"
+}
