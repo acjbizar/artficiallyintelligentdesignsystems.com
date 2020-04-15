@@ -171,8 +171,10 @@
         var html = document.documentElement;
         height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
-        canvas.width = width;
-        canvas.height = height;
+        var scale = window.devicePixelRatio || 1;
+        canvas.width = width * scale;
+        canvas.height = height * scale;
+        c.scale(scale, scale);
         c.fillStyle = '#000000';
         c.fillRect(0,0,width,height);
         var date = new Date();
