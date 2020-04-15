@@ -26,7 +26,7 @@
     <link rel="shortlink" href="http://aids.acjs.net/">
     <style>
         *{border:0;margin:0;outline:0;padding:0;text-decoration:none}
-        body,canvas,html{display:block;height:100%;overflow:hidden;user-select:none;width:100%}
+        body,canvas,html{background:black;display:block;height:100%;overflow:hidden;user-select:none;width:100%}
     </style>
     <script type="application/ld+json">
         {
@@ -172,11 +172,15 @@
         height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
         var scale = window.devicePixelRatio || 1;
-        canvas.width = width * scale;
-        canvas.height = height * scale;
-        c.scale(scale, scale);
+        width *= scale;
+        height *= scale;
+        canvas.width = width;
+        canvas.height = height;
+        //c.scale(scale * 2, scale * 2);
+        canvas.style.width = width/scale + 'px';
+        canvas.style.height = height/scale + 'px';
         c.fillStyle = '#000000';
-        c.fillRect(0,0,width,height);
+        c.fillRect(0,0,width*scale,height*scale);
         var date = new Date();
         var time = date.getTime();
         animate(canvas, time);
