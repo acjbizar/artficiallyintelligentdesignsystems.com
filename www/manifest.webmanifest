@@ -1,0 +1,19 @@
+{
+  "$schema": "https:\/\/json.schemastore.org\/web-manifest-combined.json",
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Artificially Intelligent Design Systems",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://artificiallyintelligentdesignsystems.com/apple-touch-icon-precomposed.png",
+      "sizes": "288x288",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "scope": "/",
+  "id": "https://artificiallyintelligentdesignsystems.com/",
+  "theme_color": "black",
+  "background_color": "black"
+}
